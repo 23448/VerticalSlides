@@ -339,8 +339,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionRadius: 5
-  DetnonationTime: 
-  upForce: 
+  DetnonationTime: 1
+  upForce: {x: '', y: ''}
   bomb: {fileID: 371294817}
 --- !u!70 &371294819
 CapsuleCollider2D:
@@ -616,7 +616,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 672388537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.09, z: 0}
+  m_LocalPosition: {x: 0.04, y: -3.17, z: 0}
   m_LocalScale: {x: 1.4414657, y: 1.3494593, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -688,8 +688,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 781056175}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.97}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0, y: -0.015, z: 1.97}
+  m_LocalScale: {x: 0.9809982, y: 0.9183633, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6

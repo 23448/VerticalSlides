@@ -19,6 +19,7 @@ public class UIController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //Debug.Log(transform.position);
         if (Input.GetMouseButtonDown(1) && menuIsUp == false)
         {
             menuIsUp = true;
@@ -36,14 +37,6 @@ public class UIController : MonoBehaviour {
         {
             speed = -10f;
             transform.Translate(speed, 0f, 0f);
-        }
-        if (menuIsUp == false)
-        {
-            Cursor.visible = false;
-        }
-        if (menuIsUp == true)
-        {
-            Cursor.visible = true;
         }
     }
 }

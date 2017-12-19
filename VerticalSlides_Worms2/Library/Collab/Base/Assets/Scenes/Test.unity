@@ -266,8 +266,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionRadius: 5
-  DetnonationTime: 5
-  upForce: 5
+  DetnonationTime: 1
+  upForce: 100
   bomb: {fileID: 371294817}
 --- !u!70 &371294819
 CapsuleCollider2D:

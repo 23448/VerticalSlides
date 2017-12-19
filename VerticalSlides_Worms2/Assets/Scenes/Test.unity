@@ -112,6 +112,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &61366238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 61366241}
+  - component: {fileID: 61366240}
+  - component: {fileID: 61366239}
+  m_Layer: 8
+  m_Name: Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &61366239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 61366238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4083faaa850c0a0468fdb7f1c94c9386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 94a73b968b9454f498a05e9b676936da, type: 3}
+  auto: 0
+  hotspot: {x: 0, y: 0}
+--- !u!61 &61366240
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 61366238}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0017740726, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.1033616, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &61366241
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 61366238}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &136169019
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +320,7 @@ GameObject:
   - component: {fileID: 371294820}
   - component: {fileID: 371294819}
   - component: {fileID: 371294818}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dynamite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,13 +335,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 371294817}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f7a1973359bb946adcfbe6535d21fe, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionRadius: 5
-  DetnonationTime: 1
-  upForce: 100
-  bomb: {fileID: 371294817}
 --- !u!70 &371294819
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -464,7 +529,7 @@ GameObject:
   - component: {fileID: 672388539}
   - component: {fileID: 672388538}
   - component: {fileID: 672388541}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#Ground'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +612,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 672388537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.09, z: 0}
+  m_LocalPosition: {x: 0.04, y: -3.17, z: 0}
   m_LocalScale: {x: 1.4414657, y: 1.3494593, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -605,7 +670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 781056176}
   - component: {fileID: 781056177}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -619,8 +684,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 781056175}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.97}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0, y: -0.015, z: 1.97}
+  m_LocalScale: {x: 0.9809982, y: 0.9183633, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -751,75 +816,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   menuIsUp: 0
---- !u!1 &1312763432
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1312763435}
-  - component: {fileID: 1312763434}
-  - component: {fileID: 1312763433}
-  m_Layer: 0
-  m_Name: Cursor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1312763433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1312763432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4083faaa850c0a0468fdb7f1c94c9386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursor: {fileID: 2800000, guid: 94a73b968b9454f498a05e9b676936da, type: 3}
-  auto: 0
-  hotspot: {x: 0, y: 0}
---- !u!61 &1312763434
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1312763432}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.01225853, y: 0.0122516155}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 21.01875, y: 9.992516}
-  m_EdgeRadius: 0
---- !u!4 &1312763435
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1312763432}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1650274492
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,7 +889,7 @@ GameObject:
   - component: {fileID: 1936850575}
   - component: {fileID: 1936850574}
   - component: {fileID: 1936850573}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Normality_placeholder_sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
