@@ -13,9 +13,15 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - Background
   - Cursor
   - Gameobjects
+=======
+  - player
+  - dynamite
+  - 
+>>>>>>> 4da11c256ed49fe3a53b626e8974bc72113f19da
   - 
   - 
   - 
