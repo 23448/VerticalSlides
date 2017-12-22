@@ -58,6 +58,7 @@
      <Compile Include="Assets\Final product\Scripts\camera control\CameraFocusPlayer.cs" />
      <Compile Include="Assets\Final product\Scripts\Destruction.cs" />
      <Compile Include="Assets\Final product\Scripts\Dynamite.cs" />
+     <Compile Include="Assets\Final product\Scripts\newDestruction.cs" />
      <Compile Include="Assets\Final product\Scripts\player\Movement.cs" />
      <Compile Include="Assets\Final product\Scripts\player\Shoot.cs" />
      <Compile Include="Assets\Merlin\collision placeholder.cs" />
