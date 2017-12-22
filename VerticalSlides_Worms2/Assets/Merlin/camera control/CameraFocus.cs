@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class CameraFocus {
 
-	public static int _focus = 1;
+	public static int _focus = 3;
 
 
 }

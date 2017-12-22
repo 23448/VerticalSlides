@@ -11,6 +11,6 @@ public class CameraFocusOnHit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		//if explosionscript = pushed { code };
 	}
 }

@@ -6,7 +6,7 @@ public class CameraFocusPlayer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		CameraFocus._focus = 1;
+		CameraFocus._focus = 3;
 	}
 	
 

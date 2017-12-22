@@ -44,7 +44,7 @@ public class movementTest : MonoBehaviour {
 			jumpStart = true;
 			jumpTimer = 2f;
 
-			Debug.Log ("why not work");
+
 
 		}
 		if (jumpTimer > 0) 
@@ -55,13 +55,13 @@ public class movementTest : MonoBehaviour {
 		if (jumpStart) 
 		{
 			jumpStartTimer -= Time.deltaTime;
-			Debug.Log ("why not work2");
+
 		}
 
 		if (jumpStartTimer < 0 && canJump && walkDirection) 
 		{
 			canJump = false;
-			Debug.Log ("why not work3");
+
 			jumpStart = false;
 			jumping = true;
 			rigidbody.velocity = new Vector2 (jumpPower / 3, jumpPower / 2);
@@ -70,7 +70,7 @@ public class movementTest : MonoBehaviour {
 		else if (jumpStartTimer < 0 && canJump && !walkDirection) 
 		{
 			canJump = false;
-			Debug.Log ("why not work3");
+
 			jumpStart = false;
 			jumping = true;
 			rigidbody.velocity = new Vector2 (-jumpPower / 3, jumpPower / 2);

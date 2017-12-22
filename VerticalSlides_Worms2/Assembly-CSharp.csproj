@@ -62,6 +62,7 @@
      <Compile Include="Assets\Merlin\placeholdshootscript.cs" />
      <Compile Include="Assets\Scripts\AimController.cs" />
      <Compile Include="Assets\Scripts\cameraaaaaa.cs" />
+     <Compile Include="Assets\Scripts\Destruction.cs" />
      <Compile Include="Assets\Scripts\Dynamite\ExplosionManager.cs" />
      <Compile Include="Assets\Scripts\MenuOverlay.cs" />
      <Compile Include="Assets\Scripts\UIController.cs" />

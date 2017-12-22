@@ -6,13 +6,23 @@ public class dynamiteGoBoomBoomPlaceholder : MonoBehaviour {
 	float spawnTimer;
 	float destroyTimer;
 	bool canExplode;
-
+	int xPosition = 0;
+	int yPosition = 0;
+	Destruction destruction;
 	public GameObject _spritemask;
 
 	void Awake(){
 		spawnTimer = 3f;
 		destroyTimer = 2f;
 		canExplode = true;
+		destruction = GameObject.FindObjectOfType(typeof(Destruction)) as Destruction;
+		xPosition += (int)transform.position.x;
+		yPosition += (int)transform.position.y;
+
+
+
+
+
 	
 	//Destroy (gameObject, 3f);
 	}
@@ -25,12 +35,13 @@ public class dynamiteGoBoomBoomPlaceholder : MonoBehaviour {
 		{
 			destroyTimer -= Time.deltaTime;
 
-			if (canExplode) { DestroyLevelChunk ();	}
+			if (canExplode) { //destruction.Explosion(xPosition, yPosition, 100); 
+			}
 
 			if (destroyTimer <= 0) 
 			{
 				Destroy (gameObject);
-				Debug.Log ("why not work");
+
 			}
 		
 		}

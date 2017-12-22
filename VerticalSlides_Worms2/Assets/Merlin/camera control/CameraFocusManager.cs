@@ -7,20 +7,34 @@ public class CameraFocusManager : MonoBehaviour {
 	// Use this for initialization
 	public GameObject player;
 	public GameObject dynamite;
+	public GameObject enemy;
+	public Camera cam;
 	void Start () {
+		
 		player = GameObject.Find ("player");
 		dynamite = GameObject.Find ("dynamite");
+
 	}
 
 
 
 	void Update () {
 		if (CameraFocus._focus == 3) {
+			
+			Vector3 viewPos = cam.WorldToViewportPoint (enemy.transform.position);
 
+			if (viewPos.x <= 0.2f || viewPos.x >= 0.8f || viewPos.y <= 0.2f || viewPos.y >= 0.8f) 
+			{
+				
+				var z = enemy.transform.position;
+				z.z = cam.transform.position.z;
+
+				cam.transform.position = Vector3.Lerp (cam.transform.position, z, Time.deltaTime * 0.9f);
+			}
 		} else if (CameraFocus._focus == 2) {
-			Camera.main.transform.position = new Vector3 (dynamite.transform.position.x, dynamite.transform.position.y, -10);
+			cam.transform.position = new Vector3 (dynamite.transform.position.x, dynamite.transform.position.y, -10);
 		} else if (CameraFocus._focus == 1) {
-			Camera.main.transform.position = new Vector3 (player.transform.position.x, player.transform.position.y, -10);
+			cam.transform.position = new Vector3 (player.transform.position.x, player.transform.position.y, -10);
 
 		}
 	}
