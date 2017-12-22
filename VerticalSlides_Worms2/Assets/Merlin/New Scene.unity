@@ -117,7 +117,6 @@ GameObject:
   m_Component:
   - component: {fileID: 190912276}
   - component: {fileID: 190912275}
-  - component: {fileID: 190912274}
   - component: {fileID: 190912273}
   m_Layer: 0
   m_Name: '#Ground'
@@ -137,137 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91477c1c42b438549a07552c13110099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &190912274
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 190912272}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 1}
-    oldSize: {x: 13.04, y: 2.71}
-    newSize: {x: 13.04, y: 2.71}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 5.69, y: -2.69}
-      - {x: 5.8199997, y: -2.6599998}
-      - {x: 5.89, y: -2.6499999}
-      - {x: 5.93, y: -2.6399999}
-      - {x: 5.91, y: -2.6499999}
-      - {x: 5.83, y: -2.6599998}
-      - {x: 5.7799997, y: -2.6699998}
-      - {x: 5.7599998, y: -2.69}
-      - {x: 5.77, y: -2.71}
-      - {x: 13.04, y: -2.71}
-      - {x: 13.04, y: -0.78999996}
-      - {x: 12.92, y: -0.78}
-      - {x: 12.809999, y: -0.79999995}
-      - {x: 12.599999, y: -0.79999995}
-      - {x: 12.48, y: -0.84}
-      - {x: 12.3, y: -0.84999996}
-      - {x: 12.09, y: -0.91999996}
-      - {x: 11.889999, y: -1.01}
-      - {x: 11.759999, y: -1.05}
-      - {x: 11.59, y: -1.12}
-      - {x: 11.5199995, y: -1.17}
-      - {x: 11.2, y: -1.2099999}
-      - {x: 11.05, y: -1.28}
-      - {x: 10.8, y: -1.35}
-      - {x: 10.71, y: -1.35}
-      - {x: 10.58, y: -1.42}
-      - {x: 10.559999, y: -1.39}
-      - {x: 10.4, y: -1.37}
-      - {x: 10.32, y: -1.4}
-      - {x: 10.15, y: -1.4}
-      - {x: 10.05, y: -1.41}
-      - {x: 9.86, y: -1.43}
-      - {x: 9.639999, y: -1.4599999}
-      - {x: 9.46, y: -1.49}
-      - {x: 9.36, y: -1.52}
-      - {x: 9.179999, y: -1.5899999}
-      - {x: 8.86, y: -1.7099999}
-      - {x: 8.69, y: -1.76}
-      - {x: 8.61, y: -1.8199999}
-      - {x: 8.58, y: -1.79}
-      - {x: 8.42, y: -1.8199999}
-      - {x: 8.37, y: -1.87}
-      - {x: 8.12, y: -1.88}
-      - {x: 8.099999, y: -1.86}
-      - {x: 8.07, y: -1.8499999}
-      - {x: 7.5699997, y: -1.67}
-      - {x: 7.49, y: -1.61}
-      - {x: 7.16, y: -1.51}
-      - {x: 7.0099998, y: -1.4499999}
-      - {x: 6.96, y: -1.4499999}
-      - {x: 6.8999996, y: -1.48}
-      - {x: 6.7, y: -1.48}
-      - {x: 6.6, y: -1.49}
-      - {x: 6.43, y: -1.5}
-      - {x: 6.2599998, y: -1.56}
-      - {x: 5.94, y: -1.5799999}
-      - {x: 5.69, y: -1.5999999}
-      - {x: 5.64, y: -1.56}
-      - {x: 5.5699997, y: -1.54}
-      - {x: 5.41, y: -1.5699999}
-      - {x: 5.35, y: -1.53}
-      - {x: 5.1, y: -1.4599999}
-      - {x: 4.74, y: -1.29}
-      - {x: 4.5899997, y: -1.16}
-      - {x: 4.5099998, y: -1.11}
-      - {x: 4.3399997, y: -0.93}
-      - {x: 4.2999997, y: -0.84999996}
-      - {x: 4.17, y: -0.48999998}
-      - {x: 4.15, y: -0.35999998}
-      - {x: 4.11, y: -0.12}
-      - {x: 4.02, y: -0.01}
-      - {x: 4, y: 0}
-      - {x: 3.76, y: 0}
-      - {x: 3.6599998, y: -0.04}
-      - {x: 3.35, y: -0.21}
-      - {x: 3.3, y: -0.26}
-      - {x: 3.1799998, y: -0.28}
-      - {x: 3.12, y: -0.32}
-      - {x: 2.9299998, y: -0.37}
-      - {x: 2.72, y: -0.39}
-      - {x: 2.58, y: -0.44}
-      - {x: 2.35, y: -0.48}
-      - {x: 2.26, y: -0.48999998}
-      - {x: 1.99, y: -0.48}
-      - {x: 1.9, y: -0.52}
-      - {x: 1.7199999, y: -0.52}
-      - {x: 1.54, y: -0.58}
-      - {x: 1.48, y: -0.55}
-      - {x: 1.39, y: -0.57}
-      - {x: 1.26, y: -0.59}
-      - {x: 1.11, y: -0.65999997}
-      - {x: 0.71999997, y: -0.88}
-      - {x: 0.57, y: -1}
-      - {x: 0.48999998, y: -1.09}
-      - {x: 0.41, y: -1.26}
-      - {x: 0.35999998, y: -1.31}
-      - {x: 0.17999999, y: -1.67}
-      - {x: 0.11, y: -1.8499999}
-      - {x: 0.07, y: -2.05}
-      - {x: 0.049999997, y: -2.24}
-      - {x: 0.01, y: -2.28}
-      - {x: 0, y: -2.37}
-      - {x: 0, y: -2.71}
-      - {x: 5.43, y: -2.71}
-      - {x: 5.44, y: -2.7}
-      - {x: 5.45, y: -2.71}
-      - {x: 5.64, y: -2.71}
 --- !u!212 &190912275
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -300,7 +168,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e114ebbd917de41419c51cb3465609ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6351ddc85cb0d0047b337a5e17275693, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -317,7 +185,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 190912272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.44, y: 1.22, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -332,7 +200,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4117420225939012, guid: 010dec06eb46d9c4aa51208e1e33c54f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.42
+      value: -4.25
       objectReference: {fileID: 0}
     - target: {fileID: 4117420225939012, guid: 010dec06eb46d9c4aa51208e1e33c54f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -384,11 +252,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4542395874224530, guid: 55334a1dd84654046884bb6450e6279c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.44
+      value: -3.61
       objectReference: {fileID: 0}
     - target: {fileID: 4542395874224530, guid: 55334a1dd84654046884bb6450e6279c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.38
+      value: 3.21
       objectReference: {fileID: 0}
     - target: {fileID: 4542395874224530, guid: 55334a1dd84654046884bb6450e6279c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -431,7 +299,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1445913215961870, guid: 55334a1dd84654046884bb6450e6279c, type: 2}
       propertyPath: m_Layer
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55334a1dd84654046884bb6450e6279c, type: 2}

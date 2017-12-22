@@ -16,8 +16,7 @@ public class dynamiteGoBoomBoomPlaceholder : MonoBehaviour {
 		destroyTimer = 2f;
 		canExplode = true;
 		destruction = GameObject.FindObjectOfType(typeof(Destruction)) as Destruction;
-		xPosition += (int)transform.position.x;
-		yPosition += (int)transform.position.y;
+
 
 
 
@@ -30,12 +29,15 @@ public class dynamiteGoBoomBoomPlaceholder : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		
 		spawnTimer -= Time.deltaTime;	
 		if(spawnTimer <= 0) 
 		{
 			destroyTimer -= Time.deltaTime;
 
-			if (canExplode) { //destruction.Explosion(xPosition, yPosition, 100); 
+			if (canExplode) 
+			{ 
+				destruction.Explosion((int)transform.position.x, (int)transform.position.y, 100); 
 			}
 
 			if (destroyTimer <= 0) 
@@ -50,6 +52,7 @@ public class dynamiteGoBoomBoomPlaceholder : MonoBehaviour {
 
 	void DestroyLevelChunk() 
 	{
+		
 		Instantiate (_spritemask, transform.position, transform.rotation);
 		canExplode = false;
 	}

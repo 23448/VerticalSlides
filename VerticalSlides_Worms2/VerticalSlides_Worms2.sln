@@ -1,13 +1,7 @@
 ﻿
-<<<<<<< HEAD
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticalSlides_Worms2", "VerticalSlides_Worms2.csproj", "{293E8CEE-627A-569F-64C3-34BAE8630898}"
-=======
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticalSlides_Worms2", "Assembly-CSharp.csproj", "{EA2400D0-0250-2E0C-35F4-1339FB8187A7}"
->>>>>>> 4da11c256ed49fe3a53b626e8974bc72113f19da
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
